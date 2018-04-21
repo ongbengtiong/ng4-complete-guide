@@ -4,8 +4,8 @@ export class Recipe {
     public imagePath: string;
 
     constructor(name: string, description: string, imagePath: string) {
-        this.name= name;
+        this.name = name;
         this.description = description;
-        this.imagePath =imagePath;
+        this.imagePath = imagePath;
     }
 }
