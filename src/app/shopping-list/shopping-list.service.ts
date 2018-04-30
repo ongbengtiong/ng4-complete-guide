@@ -11,7 +11,7 @@ export class ShoppingListService {
 
     constructor() { }
 
-    getIngredients()git {
+    getIngredients() {
         return this.ingredients.slice();
     }
     addIngredient(ingredient: Ingredient) {
