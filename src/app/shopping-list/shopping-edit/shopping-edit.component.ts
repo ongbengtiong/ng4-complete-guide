@@ -24,8 +24,8 @@ export class ShoppingEditComponent implements OnInit {
         this.editedItemIndex = index;
         this.editedItem = this.shoppingListService.getIngredient(index);
         this.slForm.setValue({
-          name: this.editedItem.name;
-          amount: this.editedItem.amount;
+          name: this.editedItem.name,
+          amount: this.editedItem.amount
         });
 
       }
