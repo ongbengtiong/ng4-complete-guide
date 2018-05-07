@@ -5,10 +5,13 @@ import { Subject } from "rxjs/Subject";
 export class ShoppingListService {
 
     ingredientsChanged = new Subject<Ingredient[]>();
+
     ingredients: Ingredient[] = [
         new Ingredient('Apples', 10),
         new Ingredient('Tomatoes', 10),
     ];
+
+    startedEditing = new Subject<number>();
 
     constructor() { }
 
