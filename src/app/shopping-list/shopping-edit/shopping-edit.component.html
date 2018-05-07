@@ -14,7 +14,7 @@
       </div>
       <div class="row">
         <div class="col-xs-12">
-          <button class="btn btn-success" type="submit" [disabled]="!f.valid">Add</button>
+          <button class="btn btn-success" type="submit" [disabled]="!f.valid">{{editMode?'Update':'Add'}}</button>
           <!-- have to change type to button, else will get a ? in the url when button is clicked.-->
           <button class="btn btn-danger" type="button">Delete</button>
           <button class="btn btn-primary" type="button">Clear</button>
