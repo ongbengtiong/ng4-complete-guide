@@ -7,8 +7,8 @@ import { Response } from '@angular/http';
     selector: 'app-header',
     templateUrl: 'header.component.html'
 })
-export class HeaderComponent { 
-    constructor(private dataStorageService: DataStorageService){
+export class HeaderComponent {
+    constructor(private dataStorageService: DataStorageService) {
     }
     onSaveData() {
         this.dataStorageService.storeRecipes().subscribe(
@@ -16,5 +16,9 @@ export class HeaderComponent {
                 console.log(response);
             }
         );
-    } 
+    }
+
+    onFetchData() {
+        this.dataStorageService.getRecipes();
+    }
 }
